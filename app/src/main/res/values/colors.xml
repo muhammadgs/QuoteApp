@@ -1,0 +1,8 @@
+<resources>
+    <color name="bg_gray">#E5E5E5</color>
+    <color name="green_primary">#63E6BE</color>
+    <color name="green_light">#DDF7EE</color>
+    <color name="pill_unselected">#FFFFFF</color>
+    <color name="text_primary">#111111</color>
+    <color name="divider">#B98F8F</color>
+</resources>
