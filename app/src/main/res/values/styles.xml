@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources><style name="TabPill">
-    <item name="android:layout_width">0dp</item>
-    <item name="android:layout_height">match_parent</item>
-    <item name="android:layout_weight">1</item>
-    <item name="android:gravity">center</item>
-    <item name="android:padding">10dp</item>
-    <item name="android:textColor">@color/text_primary</item>
-    <item name="android:textSize">16sp</item>
-    <item name="android:fontFamily">@font/poppins_regular</item>
-</style>
+<resources>
+    <style name="TabPill">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:lineSpacingMultiplier">1.263</item>
+    </style>
 </resources>
