@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">QuotesApp</string>
-    <string name="placeholder_author">Add your first quote</string>
-    <string name="placeholder_quote">Tap the plus button to save a quote you love.</string>
-    <string name="placeholder_date">--.--.---- --:--</string>
-    <string name="error_required">Required</string>
-    <string name="error_saving_quote">Something went wrong while saving the quote.</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_fragment_label">First</string>
+    <string name="second_fragment_label">Second</string>
 </resources>
