@@ -12,6 +12,9 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.example.quotesapp.data.QuoteEntity
 import com.example.quotesapp.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
+import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -59,12 +62,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateTabs(selected: Tab) {
         fun setPill(view: TextView, isSelected: Boolean) {
-            val drawable = ContextCompat.getDrawable(this, R.drawable.bg_tab_pill)?.mutate()
-            val colorRes = if (isSelected) R.color.tab_selected else R.color.tab_unselected
-            drawable?.setTint(ContextCompat.getColor(this, colorRes))
-            view.background = drawable
+            val bgRes = if (isSelected) R.drawable.bg_pill_selected else R.drawable.bg_pill_unselected
+            view.setBackgroundResource(bgRes)
             view.setLineSpacing(0f, 1.263f)
         }
+
 
         setPill(binding.tabMyQuotes, selected == Tab.MY)
         setPill(binding.tabRandom, selected == Tab.RANDOM)
@@ -73,4 +75,12 @@ class MainActivity : AppCompatActivity() {
         binding.cvTabs.setCardBackgroundColor(ContextCompat.getColor(this, R.color.tab_capsule))
         binding.root.setBackgroundColor(ContextCompat.getColor(this, R.color.background_surface))
     }
+
+
+    private fun Long.toDisplayDate(): String {
+        val df = SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.getDefault())
+        return df.format(Date(this))
+    }
+
 }
+

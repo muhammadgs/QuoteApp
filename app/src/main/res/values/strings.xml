@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">QuotesApp</string>
+
+    <string name="placeholder_author">Söyleyen kişi</string>
+    <string name="placeholder_quote">her hangi bir cümle...</string>
+    <string name="placeholder_date">tarih</string>
+
+    <string name="error_required">Bu alan zorunludur</string>
+    <string name="error_saving_quote">Kayıt sırasında bir hata oluştu</string>
+
+    <!-- (kullanmıyorsan gerek yok, ama navigation template varsa hata keser) -->
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="lorem_ipsum">Lorem ipsum</string>

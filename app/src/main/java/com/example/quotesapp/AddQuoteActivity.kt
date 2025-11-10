@@ -33,9 +33,12 @@ class AddQuoteActivity : AppCompatActivity() {
         binding.etAttribution.doAfterTextChanged { binding.tilAttribution.error = null }
     }
 
+
     private fun attemptSave() {
+        // ✅ EKSİK İKİ DEĞİŞKEN
         val quoteText = binding.etQuote.text?.toString()?.trim().orEmpty()
         val attribution = binding.etAttribution.text?.toString()?.trim().orEmpty()
+
         val tags = binding.etTags.text?.toString()?.trim().orEmpty()
         val notes = binding.etNotes.text?.toString()?.trim().orEmpty()
 
@@ -48,7 +51,6 @@ class AddQuoteActivity : AppCompatActivity() {
             binding.tilAttribution.error = getString(R.string.error_required)
             hasError = true
         }
-
         if (hasError) return
 
         lifecycleScope.launch {
@@ -62,7 +64,11 @@ class AddQuoteActivity : AppCompatActivity() {
                 )
                 finish()
             } catch (t: Throwable) {
-                Toast.makeText(this@AddQuoteActivity, R.string.error_saving_quote, Toast.LENGTH_LONG).show()
+                Toast.makeText(
+                    this@AddQuoteActivity,
+                    R.string.error_saving_quote,
+                    Toast.LENGTH_LONG
+                ).show()
             }
         }
     }
