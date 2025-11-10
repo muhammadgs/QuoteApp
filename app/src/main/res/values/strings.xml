@@ -17,6 +17,7 @@
     <string name="empty_state_tags">Henüz bir etiket eklenmedi.</string>
     <string name="empty_state_authors">Henüz bir yazar eklenmedi.</string>
     <string name="empty_state_quotes">Bu kriter ile eşleşen alıntı yok.</string>
+    <string name="empty_state_my_quotes">Henüz bir alıntı eklemediniz.</string>
 
     <!-- (kullanmıyorsan gerek yok, ama navigation template varsa hata keser) -->
     <string name="next">Next</string>
