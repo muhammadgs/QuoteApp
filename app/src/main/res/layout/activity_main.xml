@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_surface"
+    android:paddingTop="48dp"
+    android:paddingBottom="16dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -29,7 +31,7 @@
         android:layout_height="72dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         app:cardBackgroundColor="@color/tab_capsule"
         app:cardCornerRadius="36dp"
         app:cardElevation="0dp"
@@ -47,7 +49,7 @@
             <TextView
                 android:id="@+id/tabMyQuotes"
                 style="@style/TabPill"
-                android:text="my\nquotes"
+                android:text="my quotes"
                 android:background="@drawable/bg_tab_pill"
                 android:textStyle="bold" />
 
@@ -80,51 +82,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cvTabs" />
 
-    <LinearLayout
-        android:id="@+id/quoteCard"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/bg_quote_card"
-        android:orientation="vertical"
-        android:padding="16dp"
+        android:clipToPadding="false"
+        android:paddingBottom="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider">
-
-        <TextView
-            android:id="@+id/tvAuthor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
-            android:textColor="@color/text_primary"
-            android:textSize="18sp"
-            tools:text="Oscar Wilde" />
-
-        <TextView
-            android:id="@+id/tvQuote"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:fontFamily="@font/poppins_regular"
-            android:lineSpacingMultiplier="1.263"
-            android:textColor="@color/text_primary"
-            android:textSize="15sp"
-            tools:text="Be yourself; everyone else is already taken." />
-
-        <TextView
-            android:id="@+id/tvDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins_regular"
-            android:gravity="end"
-            android:textColor="@color/text_primary"
-            android:textSize="12sp"
-            tools:text="24.01.2025 10:42" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@id/divider" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAdd"
