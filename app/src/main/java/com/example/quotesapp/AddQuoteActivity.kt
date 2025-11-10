@@ -30,14 +30,14 @@ class AddQuoteActivity : AppCompatActivity() {
 
     private fun configureInputValidation() {
         binding.etQuote.doAfterTextChanged { binding.tilQuote.error = null }
-        binding.etAttribution.doAfterTextChanged { binding.tilAttribution.error = null }
+        binding.etAuthor.doAfterTextChanged { binding.tilAuthor.error = null }
     }
 
 
     private fun attemptSave() {
         // ✅ EKSİK İKİ DEĞİŞKEN
         val quoteText = binding.etQuote.text?.toString()?.trim().orEmpty()
-        val attribution = binding.etAttribution.text?.toString()?.trim().orEmpty()
+        val author = binding.etAuthor.text?.toString()?.trim().orEmpty()
 
         val tags = binding.etTags.text?.toString()?.trim().orEmpty()
         val notes = binding.etNotes.text?.toString()?.trim().orEmpty()
@@ -47,8 +47,8 @@ class AddQuoteActivity : AppCompatActivity() {
             binding.tilQuote.error = getString(R.string.error_required)
             hasError = true
         }
-        if (attribution.isEmpty()) {
-            binding.tilAttribution.error = getString(R.string.error_required)
+        if (author.isEmpty()) {
+            binding.tilAuthor.error = getString(R.string.error_required)
             hasError = true
         }
         if (hasError) return
@@ -57,7 +57,7 @@ class AddQuoteActivity : AppCompatActivity() {
             try {
                 viewModel.saveQuote(
                     text = quoteText,
-                    attribution = attribution,
+                    author = author,
                     tags = tags.takeIf { it.isNotEmpty() },
                     notes = notes.takeIf { it.isNotEmpty() },
                     now = System.currentTimeMillis()

@@ -7,12 +7,12 @@ import com.example.quotesapp.data.QuoteRepository
 class AddQuoteViewModel(private val repository: QuoteRepository) : ViewModel() {
     suspend fun saveQuote(
         text: String,
-        attribution: String,
+        author: String,
         tags: String?,
         notes: String?,
         now: Long
     ) {
-        repository.add(text, attribution, tags, notes, now)
+        repository.add(text, author, tags, notes, now)
     }
 }
 

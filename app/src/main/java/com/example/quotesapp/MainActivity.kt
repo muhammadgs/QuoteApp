@@ -10,6 +10,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.example.quotesapp.data.QuoteEntity
+import com.example.quotesapp.tags.TagListActivity
+import com.example.quotesapp.authors.AuthorListActivity
 import com.example.quotesapp.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
@@ -32,8 +34,12 @@ class MainActivity : AppCompatActivity() {
         updateTabs(Tab.MY)
 
         binding.tabMyQuotes.setOnClickListener { viewModel.select(Tab.MY) }
-        binding.tabRandom.setOnClickListener { viewModel.select(Tab.RANDOM) }
-        binding.tabPersons.setOnClickListener { viewModel.select(Tab.PERSONS) }
+        binding.tabTags.setOnClickListener {
+            startActivity(Intent(this, TagListActivity::class.java))
+        }
+        binding.tabAuthors.setOnClickListener {
+            startActivity(Intent(this, AuthorListActivity::class.java))
+        }
 
         binding.fabAdd.setOnClickListener {
             startActivity(Intent(this, AddQuoteActivity::class.java))
@@ -69,8 +75,8 @@ class MainActivity : AppCompatActivity() {
 
 
         setPill(binding.tabMyQuotes, selected == Tab.MY)
-        setPill(binding.tabRandom, selected == Tab.RANDOM)
-        setPill(binding.tabPersons, selected == Tab.PERSONS)
+        setPill(binding.tabTags, selected == Tab.TAGS)
+        setPill(binding.tabAuthors, selected == Tab.AUTHORS)
 
         binding.cvTabs.setCardBackgroundColor(ContextCompat.getColor(this, R.color.tab_capsule))
         binding.root.setBackgroundColor(ContextCompat.getColor(this, R.color.background_surface))

@@ -52,16 +52,16 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tabRandom"
+                android:id="@+id/tabTags"
                 style="@style/TabPill"
-                android:text="random\nquotes"
+                android:text="tags"
                 android:background="@drawable/bg_tab_pill"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tabPersons"
+                android:id="@+id/tabAuthors"
                 style="@style/TabPill"
-                android:text="persons"
+                android:text="authors"
                 android:background="@drawable/bg_tab_pill"
                 android:textStyle="bold" />
         </LinearLayout>
