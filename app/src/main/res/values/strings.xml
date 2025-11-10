@@ -8,6 +8,16 @@
     <string name="error_required">Bu alan zorunludur</string>
     <string name="error_saving_quote">Kayıt sırasında bir hata oluştu</string>
 
+    <string name="title_tags">Tags</string>
+    <string name="title_authors">Authors</string>
+    <string name="title_quotes_for_tag">Quotes tagged "%1$s"</string>
+    <string name="title_quotes_for_author">Quotes by %1$s</string>
+
+    <string name="empty_state_default">Henüz içerik yok.</string>
+    <string name="empty_state_tags">Henüz bir etiket eklenmedi.</string>
+    <string name="empty_state_authors">Henüz bir yazar eklenmedi.</string>
+    <string name="empty_state_quotes">Bu kriter ile eşleşen alıntı yok.</string>
+
     <!-- (kullanmıyorsan gerek yok, ama navigation template varsa hata keser) -->
     <string name="next">Next</string>
     <string name="previous">Previous</string>

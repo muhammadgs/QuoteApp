@@ -42,7 +42,7 @@ class QuoteRepository(private val dao: QuoteDao) {
 
     suspend fun add(
         text: String,
-        attribution: String,
+        author: String,
         tags: String?,
         notes: String?,
         now: Long
@@ -50,7 +50,7 @@ class QuoteRepository(private val dao: QuoteDao) {
         dao.insert(
             QuoteEntity(
                 text = text,
-                attribution = attribution,
+                attribution = author,
                 tags = tags,
                 notes = notes,
                 createdAt = now

@@ -99,17 +99,17 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilAttribution"
+                android:id="@+id/tilAuthor"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:hint="Attribution"
+                android:hint="Author"
                 app:boxStrokeColor="@color/tab_capsule"
                 app:hintTextColor="@color/hint_text">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etAttribution"
+                    android:id="@+id/etAuthor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"

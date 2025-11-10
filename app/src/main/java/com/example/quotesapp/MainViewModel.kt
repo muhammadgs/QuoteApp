@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
 
-enum class Tab { MY, RANDOM, PERSONS }
+enum class Tab { MY, TAGS, AUTHORS }
 
 class MainViewModel(private val repo: QuoteRepository) : ViewModel() {
     private val _selectedTab = MutableStateFlow(Tab.MY)
