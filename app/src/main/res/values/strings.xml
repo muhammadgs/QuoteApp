@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">QuotesApp</string>
+    <string name="auth_app_title">Quotes</string>
+    <string name="auth_welcome">Welcome!</string>
+    <string name="auth_sign_up">sign up</string>
+    <string name="auth_sign_in">sign in</string>
+    <string name="auth_subtitle_signup">Sign up with</string>
+    <string name="auth_subtitle_signin">Sign in with</string>
+    <string name="auth_continue_google">Continue with google</string>
+    <string name="auth_continue_facebook">Continue with facebook</string>
+    <string name="auth_google_signup">Google ile kayıt olundu</string>
+    <string name="auth_facebook_signup">Facebook ile kayıt olundu</string>
+    <string name="auth_google_signin">Google ile giriş yapıldı</string>
+    <string name="auth_facebook_signin">Facebook ile giriş yapıldı</string>
 
     <string name="placeholder_author">Söyleyen kişi</string>
     <string name="placeholder_quote">her hangi bir cümle...</string>

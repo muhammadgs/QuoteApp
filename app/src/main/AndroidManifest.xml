@@ -27,6 +27,10 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QuotesApp" />
+        <activity
+            android:name=".auth.AuthActivity"
             android:exported="true"
             android:theme="@style/Theme.QuotesApp">
             <intent-filter>
