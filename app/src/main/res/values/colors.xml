@@ -13,4 +13,6 @@
     <color name="green_primary">#60D39D</color>
     <color name="green_light">#DDF7EE</color>
     <color name="accent_pink">#FF5C8A</color>
+    <color name="auth_background">#E6EAEC</color>
+    <color name="auth_button_background">#CFECDD</color>
 </resources>
